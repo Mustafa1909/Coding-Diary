@@ -1,22 +1,19 @@
 public class stock{
     public static void main(String[] args) {
-        int arr[]={1, 3, 6, 9, 11};
+        int arr[]={100, 180, 260, 310, 40, 535, 695};
         int res = Stock(arr);
         System.out.println(res);
         
     }
     public static int Stock(int arr[]){
-        int currmax=0;
-        int minprice=arr[0];
-
-        for(int i=0;i<arr.length;i++){
-        minprice=Math.min(minprice,arr[i]);
-        currmax=Math.max(currmax,arr[i]-minprice);
-        }
-        return currmax;
-
-
-
+        int result =0;
         
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>arr[i-1]){
+                result+=arr[i]-arr[i-1];
+            }
+       
+        }
+        return result; 
     }
 }
