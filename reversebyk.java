@@ -5,10 +5,6 @@ public class reversebyk {
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
-        
-        
-      
-        
     }
     public static void reverse(int arr[],int k){
         int n=arr.length;
@@ -20,8 +16,6 @@ public class reversebyk {
 
     }
     public static void reversebyk(int arr[],int s,int e){
-        
-       
         while(s<e){
             int temp = arr[s];
             arr[s]=arr[e];
