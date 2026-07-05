@@ -1,7 +1,7 @@
 import java.util.*;
 public class MergeIntervals{
     public static void main(String[] args) {
-        int arr[][]={{1,3},{2,6},{8,10},{15,18}};
+        int arr[][]={{1,3},{2,6},{8,10},{9,18}};
          int[][] ans = Merge(arr);
 
         for (int[] interval : ans) {
